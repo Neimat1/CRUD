@@ -185,7 +185,9 @@ function searchProduct(product){
     }
     document.getElementById('tbody').innerHTML=temporaryContainter;
 }
-// productSearch.addEventListener('keyup',searchProduct(productSearch.value));
+productSearch.addEventListener('keyup',function(){
+    searchProduct(productSearch.value);
+});
 ////////////////////////////////////////////////////////////////////////// 
 ////////////////////////////////////////////////////////////////////////// 
 function DisplayCurrentUpdateProduct(indexOfProduct){
